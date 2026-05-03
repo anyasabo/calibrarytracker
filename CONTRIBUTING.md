@@ -44,7 +44,7 @@ node -v
 go version
 
 # 3) Install frontend dependencies
-npm ci --include=dev --no-audit --no-fund
+npm ci --no-audit --no-fund
 
 # 4) Refresh library data (scraper)
 go run ./cmd/scraper
