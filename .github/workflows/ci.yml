@@ -15,10 +15,10 @@ jobs:
 
       - uses: actions/setup-node@v6
         with:
-          node-version: '20'
+          node-version-file: 'package.json'
           cache: 'npm'
 
-      - run: npm ci --include=dev
+      - run: npm ci --include=dev --no-audit --no-fund
 
       - name: Prettier (formatting)
         run: npx prettier --check .
@@ -40,7 +40,7 @@ jobs:
 
       - uses: actions/setup-go@v6
         with:
-          go-version: '1.22'
+          go-version-file: 'go.mod'
 
       - name: go vet
         run: go vet ./...

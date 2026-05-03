@@ -69,7 +69,11 @@
 		const isRouteStop = routeStops.some((s) => s.id === branch.id);
 
 		const statusLabel =
-			status === 'have-card' ? 'You have a card' : status === 'reciprocal' ? 'Reciprocal access' : '';
+			status === 'have-card'
+				? 'You have a card'
+				: status === 'reciprocal'
+					? 'Reciprocal access'
+					: '';
 
 		const branchStatusBadge =
 			branch.status !== 'open'

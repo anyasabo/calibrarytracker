@@ -117,9 +117,7 @@
 				{:else if consortiumOd}
 					<p>
 						Libby/OverDrive (via {consortiumOd.coopName}):
-						<a href={consortiumOd.url} target="_blank" rel="noopener">
-							Browse collection
-						</a>
+						<a href={consortiumOd.url} target="_blank" rel="noopener"> Browse collection </a>
 					</p>
 				{/if}
 				{#if system.digitalAccess.offersEcard}

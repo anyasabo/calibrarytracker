@@ -164,14 +164,14 @@
 					<li>
 						<span class="stop-name">{stop.name}</span>
 						<span class="stop-actions">
-							<button
-								onclick={() => moveStop(idx, -1)}
-								disabled={idx === 0}
-								aria-label="Move up">&#8593;</button>
+							<button onclick={() => moveStop(idx, -1)} disabled={idx === 0} aria-label="Move up"
+								>&#8593;</button
+							>
 							<button
 								onclick={() => moveStop(idx, 1)}
 								disabled={idx === routeStops.length - 1}
-								aria-label="Move down">&#8595;</button>
+								aria-label="Move down">&#8595;</button
+							>
 							<button onclick={() => removeStop(idx)} aria-label="Remove">&#215;</button>
 						</span>
 					</li>
@@ -290,9 +290,15 @@
 		display: inline-block;
 	}
 
-	.dot-green { background: #22c55e; }
-	.dot-blue { background: #3b82f6; }
-	.dot-gray { background: #9ca3af; }
+	.dot-green {
+		background: #22c55e;
+	}
+	.dot-blue {
+		background: #3b82f6;
+	}
+	.dot-gray {
+		background: #9ca3af;
+	}
 
 	.route-toggle {
 		display: flex;
@@ -309,7 +315,9 @@
 		cursor: pointer;
 	}
 
-	.btn-route:hover { border-color: var(--color-primary); }
+	.btn-route:hover {
+		border-color: var(--color-primary);
+	}
 
 	.btn-route.active {
 		background: var(--color-primary);
@@ -354,7 +362,9 @@
 		font-size: 0.8rem;
 	}
 
-	.route-list li:last-child { border-bottom: none; }
+	.route-list li:last-child {
+		border-bottom: none;
+	}
 
 	.stop-name {
 		flex: 1;
@@ -383,8 +393,13 @@
 		padding: 0;
 	}
 
-	.stop-actions button:hover { background: var(--color-bg); }
-	.stop-actions button:disabled { opacity: 0.3; cursor: default; }
+	.stop-actions button:hover {
+		background: var(--color-bg);
+	}
+	.stop-actions button:disabled {
+		opacity: 0.3;
+		cursor: default;
+	}
 
 	.route-actions {
 		display: flex;
@@ -409,8 +424,12 @@
 		text-decoration: none;
 	}
 
-	.btn-nav-apple { background: #1d1d1f; }
-	.btn-nav-apple:hover { background: #333; }
+	.btn-nav-apple {
+		background: #1d1d1f;
+	}
+	.btn-nav-apple:hover {
+		background: #333;
+	}
 
 	.btn-clear {
 		background: none;

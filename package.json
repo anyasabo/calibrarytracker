@@ -4,6 +4,9 @@
 	"private": true,
 	"description": "Track your California public library cards, branch visits, and discover new libraries",
 	"type": "module",
+	"engines": {
+		"node": "24.x"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
