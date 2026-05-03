@@ -1,2 +1,2 @@
-node 24.x
+node prefix:24
 go 1.26
