@@ -11,6 +11,7 @@
 			<a href="/" class="logo">CA Library Tracker</a>
 			<ul>
 				<li><a href="/systems">Libraries</a></li>
+				<li><a href="/map">Map</a></li>
 				<li><a href="/cards">My Cards</a></li>
 				<li><a href="/visits">My Visits</a></li>
 			</ul>

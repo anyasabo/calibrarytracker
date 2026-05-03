@@ -46,6 +46,7 @@
 
 <div class="actions">
 	<a href="/systems" class="btn btn-primary">Browse Libraries</a>
+	<a href="/map" class="btn btn-secondary">View Map</a>
 	<a href="/cards" class="btn btn-secondary">Manage Cards</a>
 </div>
 
