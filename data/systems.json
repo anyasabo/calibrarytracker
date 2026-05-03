@@ -34,11 +34,11 @@
     "catalogUrl": "",
     "directorName": "Cynthia Chadwick",
     "clsaSystem": "",
-    "lat": 37.88797,
-    "lng": -122.29299,
+    "lat": 413.98846,
+    "lng": -1342.51474,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://aclibrary.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -83,8 +83,8 @@
     "lat": 34.09307,
     "lng": -118.12754,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://alhambralibrary.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -267,8 +267,8 @@
     "lat": 33.93201,
     "lng": -116.9811,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://bld.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -336,11 +336,11 @@
     "lat": 189.33624,
     "lng": -611.36014,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
-      "offersEcard": false,
-      "ecardUrl": "",
-      "ecardNotes": ""
+      "hasOverdrive": true,
+      "overdriveUrl": "https://berkeleypubliclibrary.overdrive.com",
+      "offersEcard": true,
+      "ecardUrl": "https://www.berkeleypubliclibrary.org/using-library/get-library-card",
+      "ecardNotes": "Online registration for Berkeley residents"
     },
     "lastUpdated": "2026-05-03"
   },
@@ -359,8 +359,8 @@
     "lat": 68.13162,
     "lng": -236.80552,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://bhpl.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -428,8 +428,8 @@
     "lat": 33.8461,
     "lng": -118.00845,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://buenapark.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -451,8 +451,8 @@
     "lat": 102.53304,
     "lng": -354.9842,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://burbank.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -589,8 +589,8 @@
     "lat": 34.24317,
     "lng": -119.0139,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://camdigital.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -704,8 +704,8 @@
     "lat": 136.00477,
     "lng": -472.61545,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://commerceca.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -793,14 +793,14 @@
     "catalogUrl": "",
     "directorName": "Alison McKee",
     "clsaSystem": "",
-    "lat": 38.03363,
-    "lng": -121.96715,
+    "lat": 986.42454,
+    "lng": -3173.63784,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
-      "offersEcard": false,
-      "ecardUrl": "",
-      "ecardNotes": ""
+      "hasOverdrive": true,
+      "overdriveUrl": "https://ccc.overdrive.com",
+      "offersEcard": true,
+      "ecardUrl": "https://ccclib.org/get-a-library-card/",
+      "ecardNotes": "Instant eCard for Contra Costa residents"
     },
     "lastUpdated": "2026-05-03"
   },
@@ -1092,11 +1092,11 @@
     "catalogUrl": "",
     "directorName": "Raman Bath",
     "clsaSystem": "",
-    "lat": 37.07471,
-    "lng": -119.48785,
+    "lat": 1396.14179,
+    "lng": -4551.04536,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://fresno.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -1118,8 +1118,8 @@
     "lat": 33.87072,
     "lng": -117.93048,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://fullerton.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -1276,8 +1276,8 @@
     "catalogUrl": "",
     "directorName": "Christopher Cooper",
     "clsaSystem": "",
-    "lat": 40.86772,
-    "lng": -124.08411,
+    "lat": 448.33344,
+    "lng": -1364.09565,
     "digitalAccess": {
       "hasOverdrive": false,
       "overdriveUrl": "",
@@ -1371,8 +1371,8 @@
     "lat": 67.89594,
     "lng": -236.68239,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://inglewoodpl.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -1437,11 +1437,11 @@
     "catalogUrl": "",
     "directorName": "Andie Sullivan",
     "clsaSystem": "",
-    "lat": 35.21035,
-    "lng": -118.8337,
+    "lat": 741.49799,
+    "lng": -2494.06482,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://kern.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -1463,8 +1463,8 @@
     "lat": 253.23977,
     "lng": -838.61326,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://kings.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -1483,11 +1483,11 @@
     "catalogUrl": "",
     "directorName": "Skye Patrick",
     "clsaSystem": "",
-    "lat": 34.49503,
-    "lng": -118.19742,
+    "lat": 2892.52949,
+    "lng": -10045.08587,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://lacountylibrary.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -1601,8 +1601,8 @@
     "lat": 113.06765,
     "lng": -365.27655,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://livermore.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -1667,14 +1667,14 @@
     "catalogUrl": "",
     "directorName": "Cathy De Leon",
     "clsaSystem": "",
-    "lat": 33.76886,
-    "lng": -118.16856,
+    "lat": 405.58257,
+    "lng": -1417.92783,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
-      "offersEcard": false,
-      "ecardUrl": "",
-      "ecardNotes": ""
+      "hasOverdrive": true,
+      "overdriveUrl": "https://lbpl.overdrive.com",
+      "offersEcard": true,
+      "ecardUrl": "https://www.longbeach.gov/library/borrow/library-cards/",
+      "ecardNotes": "Online registration available"
     },
     "lastUpdated": "2026-05-03"
   },
@@ -1713,14 +1713,14 @@
     "catalogUrl": "",
     "directorName": "John Szabo",
     "clsaSystem": "",
-    "lat": 33.99483,
-    "lng": -118.32286,
+    "lat": 2488.0535,
+    "lng": -8640.07107,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
-      "offersEcard": false,
-      "ecardUrl": "",
-      "ecardNotes": ""
+      "hasOverdrive": true,
+      "overdriveUrl": "https://lapl.overdrive.com",
+      "offersEcard": true,
+      "ecardUrl": "https://www.lapl.org/e-card",
+      "ecardNotes": "Instant eCard for CA residents"
     },
     "lastUpdated": "2026-05-03"
   },
@@ -1762,8 +1762,8 @@
     "lat": 185.5656,
     "lng": -599.35625,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://maderalibrary.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -1782,8 +1782,8 @@
     "catalogUrl": "",
     "directorName": "Lana Adlawan",
     "clsaSystem": "",
-    "lat": 37.90951,
-    "lng": -122.68579,
+    "lat": 379.92477,
+    "lng": -1226.24473,
     "digitalAccess": {
       "hasOverdrive": false,
       "overdriveUrl": "",
@@ -1874,11 +1874,11 @@
     "catalogUrl": "",
     "directorName": "Amy Taylor",
     "clsaSystem": "",
-    "lat": 37.35083,
-    "lng": -120.60617,
+    "lat": 447.39837,
+    "lng": -1448.24779,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://mercedcountylibrary.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -2012,11 +2012,11 @@
     "catalogUrl": "",
     "directorName": "Hillary Theyer",
     "clsaSystem": "",
-    "lat": 36.26472,
-    "lng": -121.80111,
+    "lat": 583.53582,
+    "lng": -1943.14563,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://emcfl.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -2084,8 +2084,8 @@
     "lat": 34.28631,
     "lng": -118.88257,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://mpkdigital.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -2265,14 +2265,14 @@
     "catalogUrl": "",
     "directorName": "Jamie Turbak",
     "clsaSystem": "",
-    "lat": 37.7534,
-    "lng": -122.18569,
+    "lat": 680.32758,
+    "lng": -2200.16843,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
-      "offersEcard": false,
-      "ecardUrl": "",
-      "ecardNotes": ""
+      "hasOverdrive": true,
+      "overdriveUrl": "https://oakland.overdrive.com",
+      "offersEcard": true,
+      "ecardUrl": "https://www.oaklandlibrary.org/using-the-library/get-a-library-card/",
+      "ecardNotes": "Instant eCard for CA residents"
     },
     "lastUpdated": "2026-05-03"
   },
@@ -2337,8 +2337,8 @@
     "lat": 33.57006,
     "lng": -117.7268,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://ocpl.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -2452,8 +2452,8 @@
     "lat": 67.64165,
     "lng": -233.07412,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://palmspringslibrary.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -2544,8 +2544,8 @@
     "lat": 101.32525,
     "lng": -355.08996,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://pvld.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -2564,11 +2564,11 @@
     "catalogUrl": "",
     "directorName": "Tim McDonald",
     "clsaSystem": "",
-    "lat": 34.12618,
-    "lng": -118.1452,
+    "lat": 341.52182,
+    "lng": -1181.36771,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://pasadena.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -2633,8 +2633,8 @@
     "catalogUrl": "",
     "directorName": "Mary George",
     "clsaSystem": "",
-    "lat": 38.99988,
-    "lng": -120.99037,
+    "lat": 350.82113,
+    "lng": -1087.58719,
     "digitalAccess": {
       "hasOverdrive": false,
       "overdriveUrl": "",
@@ -2774,8 +2774,8 @@
     "lat": 33.74848,
     "lng": -116.42128,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://rml.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -2797,8 +2797,8 @@
     "lat": 67.71858,
     "lng": -236.76484,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://rbpl.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -2843,8 +2843,8 @@
     "lat": 113.77843,
     "lng": -367.05211,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://richmondlibrary.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -2863,11 +2863,11 @@
     "catalogUrl": "",
     "directorName": "Joan Tyler",
     "clsaSystem": "",
-    "lat": 33.57024,
-    "lng": -116.65979,
+    "lat": 1249.45371,
+    "lng": -4327.72483,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://iedigital.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -2932,14 +2932,14 @@
     "catalogUrl": "",
     "directorName": "Peter Coyl",
     "clsaSystem": "",
-    "lat": 38.61861,
-    "lng": -121.40409,
+    "lat": 1078.83022,
+    "lng": -3400.0369,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
-      "offersEcard": false,
-      "ecardUrl": "",
-      "ecardNotes": ""
+      "hasOverdrive": true,
+      "overdriveUrl": "https://saclibrary.overdrive.com",
+      "offersEcard": true,
+      "ecardUrl": "https://www.saclibrary.org/Books-Media/eCard",
+      "ecardNotes": "Instant eCard for Sacramento County residents"
     },
     "lastUpdated": "2026-05-03"
   },
@@ -2958,8 +2958,8 @@
     "lat": 110.05754,
     "lng": -364.91665,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://salinaspubliclibrary.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -3024,11 +3024,11 @@
     "catalogUrl": "",
     "directorName": "Melanie Orosco",
     "clsaSystem": "",
-    "lat": 34.57856,
-    "lng": -117.41464,
+    "lat": 1096.70631,
+    "lng": -3749.00375,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://sbcldigital.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -3050,8 +3050,8 @@
     "lat": 136.5037,
     "lng": -469.2123,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://sbpl.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -3093,11 +3093,11 @@
     "catalogUrl": "",
     "directorName": "Migell Acosta",
     "clsaSystem": "",
-    "lat": 33.02112,
-    "lng": -117.11439,
+    "lat": 1085.4533,
+    "lng": -3859.11814,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://sdcl.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -3116,8 +3116,8 @@
     "catalogUrl": "",
     "directorName": "Misty Jones",
     "clsaSystem": "",
-    "lat": 32.79311,
-    "lng": -117.08148,
+    "lat": 1180.40634,
+    "lng": -4216.84016,
     "digitalAccess": {
       "hasOverdrive": false,
       "overdriveUrl": "",
@@ -3139,14 +3139,14 @@
     "catalogUrl": "",
     "directorName": "Michael Lambert",
     "clsaSystem": "",
-    "lat": 37.7786,
-    "lng": -122.49727,
+    "lat": 1057.20874,
+    "lng": -3428.28498,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
-      "offersEcard": false,
-      "ecardUrl": "",
-      "ecardNotes": ""
+      "hasOverdrive": true,
+      "overdriveUrl": "https://sfpl.overdrive.com",
+      "offersEcard": true,
+      "ecardUrl": "https://sfpl.org/get-a-library-card",
+      "ecardNotes": "Instant eCard for CA residents"
     },
     "lastUpdated": "2026-05-03"
   },
@@ -3162,14 +3162,14 @@
     "catalogUrl": "",
     "directorName": "Jill Bourne",
     "clsaSystem": "",
-    "lat": 37.2215,
-    "lng": -121.86902,
+    "lat": 932.86449,
+    "lng": -3046.81706,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
-      "offersEcard": false,
-      "ecardUrl": "",
-      "ecardNotes": ""
+      "hasOverdrive": true,
+      "overdriveUrl": "https://sanjose.overdrive.com",
+      "offersEcard": true,
+      "ecardUrl": "https://www.sjpl.org/ecard",
+      "ecardNotes": "Instant eCard for CA residents"
     },
     "lastUpdated": "2026-05-03"
   },
@@ -3211,8 +3211,8 @@
     "lat": 150.82407,
     "lng": -488.62289,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://sanleandrolibrary.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -3231,11 +3231,11 @@
     "catalogUrl": "",
     "directorName": "Christopher Barnickel",
     "clsaSystem": "",
-    "lat": 35.48919,
-    "lng": -120.66391,
+    "lat": 495.19367,
+    "lng": -1689.58614,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://slolibrary.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -3254,8 +3254,8 @@
     "catalogUrl": "",
     "directorName": "Anne-Marie Despain",
     "clsaSystem": "",
-    "lat": 37.50882,
-    "lng": -122.29318,
+    "lat": 487.76177,
+    "lng": -1590.06732,
     "digitalAccess": {
       "hasOverdrive": false,
       "overdriveUrl": "",
@@ -3326,8 +3326,8 @@
     "lat": 202.47763,
     "lng": -707.31332,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://santaanapubliclibrary.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -3349,8 +3349,8 @@
     "lat": 172.10842,
     "lng": -598.23759,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://santabarbara.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -3395,11 +3395,11 @@
     "lat": 37.28824,
     "lng": -121.94327,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
-      "offersEcard": false,
-      "ecardUrl": "",
-      "ecardNotes": ""
+      "hasOverdrive": true,
+      "overdriveUrl": "https://santaclara.overdrive.com",
+      "offersEcard": true,
+      "ecardUrl": "https://www.sccl.org/eCard",
+      "ecardNotes": "Instant eCard for CA residents"
     },
     "lastUpdated": "2026-05-03"
   },
@@ -3418,8 +3418,8 @@
     "lat": 103.2135,
     "lng": -355.54023,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://santaclarita.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -3510,8 +3510,8 @@
     "lat": 170.09177,
     "lng": -592.40068,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://santamonica.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -3668,8 +3668,8 @@
     "catalogUrl": "",
     "directorName": "Michael Perry",
     "clsaSystem": "",
-    "lat": 41.21172,
-    "lng": -122.27143,
+    "lat": 499.18688,
+    "lng": -1469.79264,
     "digitalAccess": {
       "hasOverdrive": false,
       "overdriveUrl": "",
@@ -3691,11 +3691,11 @@
     "catalogUrl": "",
     "directorName": "Suzanne Olawski",
     "clsaSystem": "",
-    "lat": 38.44685,
-    "lng": -121.82205,
+    "lat": 344.24082,
+    "lng": -1098.14538,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://solano.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -3714,11 +3714,11 @@
     "catalogUrl": "",
     "directorName": "Erika Thibault",
     "clsaSystem": "",
-    "lat": 38.80871,
-    "lng": -123.02002,
+    "lat": 576.90143,
+    "lng": -1841.7147,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://sonoma.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -3806,8 +3806,8 @@
     "catalogUrl": "",
     "directorName": "Sarah Dentan",
     "clsaSystem": "",
-    "lat": 37.59295,
-    "lng": -120.95495,
+    "lat": 488.68724,
+    "lng": -1572.03625,
     "digitalAccess": {
       "hasOverdrive": false,
       "overdriveUrl": "",
@@ -3829,11 +3829,11 @@
     "catalogUrl": "",
     "directorName": "Kris Farro",
     "clsaSystem": "",
-    "lat": 38.01108,
-    "lng": -121.2828,
+    "lat": 606.5668,
+    "lng": -1940.37171,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://ssjcpl.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -3855,8 +3855,8 @@
     "lat": 37.37164,
     "lng": -122.0392,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://sunnyvale.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -3924,8 +3924,8 @@
     "lat": 68.38301,
     "lng": -237.78138,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://tolibrary.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -3947,8 +3947,8 @@
     "lat": 202.98749,
     "lng": -710.09542,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://torrance.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -3990,11 +3990,11 @@
     "catalogUrl": "",
     "directorName": "Darla Wegener",
     "clsaSystem": "",
-    "lat": 35.88788,
-    "lng": -119.48686,
+    "lat": 652.31359,
+    "lng": -2145.63078,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://tularecounty.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -4082,8 +4082,8 @@
     "catalogUrl": "",
     "directorName": "Nancy Schram",
     "clsaSystem": "",
-    "lat": 34.2371,
-    "lng": -119.16825,
+    "lat": 446.09268,
+    "lng": -1548.91187,
     "digitalAccess": {
       "hasOverdrive": false,
       "overdriveUrl": "",
@@ -4154,11 +4154,11 @@
     "lat": 33.93982,
     "lng": -117.99359,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
-      "offersEcard": false,
-      "ecardUrl": "",
-      "ecardNotes": ""
+      "hasOverdrive": true,
+      "overdriveUrl": "https://whittierpubliclibrary.overdrive.com",
+      "offersEcard": true,
+      "ecardUrl": "https://www.whittierlibrary.org/ecard",
+      "ecardNotes": "Instant eCard"
     },
     "lastUpdated": "2026-05-03"
   },
@@ -4223,8 +4223,8 @@
     "lat": 270.30486,
     "lng": -852.31015,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://yolocounty.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""
@@ -4246,8 +4246,8 @@
     "lat": 33.89108,
     "lng": -117.81512,
     "digitalAccess": {
-      "hasOverdrive": false,
-      "overdriveUrl": "",
+      "hasOverdrive": true,
+      "overdriveUrl": "https://ylpl.overdrive.com",
       "offersEcard": false,
       "ecardUrl": "",
       "ecardNotes": ""

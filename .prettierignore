@@ -9,9 +9,10 @@ build/
 data/systems.json
 data/branches.json
 
-# Hand-curated data (2-space indent from manual editing, not tabs)
+# Hand-curated data
 data/cooperatives.json
 data/partnerships.json
+data/digital-access.json
 
 # Go
 cmd/

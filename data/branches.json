@@ -9,8 +9,8 @@
     "county": "",
     "phone": "",
     "website": "",
-    "lat": 0,
-    "lng": 0,
+    "lat": 41141.42992,
+    "lng": -137156.96933,
     "outletType": "other",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -122,7 +122,7 @@
     "phone": "5107451401",
     "website": "",
     "lat": 413.98846,
-    "lng": 0,
+    "lng": -1342.51474,
     "outletType": "branch",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -1562,7 +1562,7 @@
     "phone": "9257579224",
     "website": "",
     "lat": 986.42454,
-    "lng": 0,
+    "lng": -3173.63784,
     "outletType": "branch",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -2505,8 +2505,8 @@
     "county": "Fresno",
     "phone": "5596007323",
     "website": "",
-    "lat": 0,
-    "lng": 0,
+    "lat": 1396.14179,
+    "lng": -4551.04536,
     "outletType": "central",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -3306,7 +3306,7 @@
     "phone": "7072691929",
     "website": "",
     "lat": 448.33344,
-    "lng": 0,
+    "lng": -1364.09565,
     "outletType": "central",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -3786,7 +3786,7 @@
     "phone": "6618680701",
     "website": "",
     "lat": 741.49799,
-    "lng": 0,
+    "lng": -2494.06482,
     "outletType": "central",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -4217,8 +4217,8 @@
     "county": "Los Angeles",
     "phone": "3105383350",
     "website": "",
-    "lat": 0,
-    "lng": 0,
+    "lat": 2892.52949,
+    "lng": -10045.08587,
     "outletType": "branch",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -5834,7 +5834,7 @@
     "phone": "5625707500",
     "website": "",
     "lat": 405.58257,
-    "lng": 0,
+    "lng": -1417.92783,
     "outletType": "central",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -6137,8 +6137,8 @@
     "county": "Los Angeles",
     "phone": "2132287571",
     "website": "",
-    "lat": 0,
-    "lng": 0,
+    "lat": 2488.0535,
+    "lng": -8640.07107,
     "outletType": "central",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -7274,7 +7274,7 @@
     "phone": "4154736057",
     "website": "",
     "lat": 379.92477,
-    "lng": 0,
+    "lng": -1226.24473,
     "outletType": "branch",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -7738,7 +7738,7 @@
     "phone": "2093857484",
     "website": "",
     "lat": 447.39837,
-    "lng": 0,
+    "lng": -1448.24779,
     "outletType": "central",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -8026,7 +8026,7 @@
     "phone": "8317966128",
     "website": "",
     "lat": 583.53582,
-    "lng": 0,
+    "lng": -1943.14563,
     "outletType": "branch",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -8858,7 +8858,7 @@
     "phone": "5102383134",
     "website": "",
     "lat": 680.32758,
-    "lng": 0,
+    "lng": -2200.16843,
     "outletType": "central",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -9962,7 +9962,7 @@
     "phone": "6267444066",
     "website": "",
     "lat": 341.52182,
-    "lng": 0,
+    "lng": -1181.36771,
     "outletType": "central",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -10090,7 +10090,7 @@
     "phone": "5308864501",
     "website": "",
     "lat": 350.82113,
-    "lng": 0,
+    "lng": -1087.58719,
     "outletType": "central",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -10569,8 +10569,8 @@
     "county": "Riverside",
     "phone": "9516744517",
     "website": "",
-    "lat": 0,
-    "lng": 0,
+    "lat": 1249.45371,
+    "lng": -4327.72483,
     "outletType": "branch",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -11657,8 +11657,8 @@
     "county": "Sacramento",
     "phone": "9162642700",
     "website": "",
-    "lat": 0,
-    "lng": 0,
+    "lat": 1078.83022,
+    "lng": -3400.0369,
     "outletType": "central",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -12265,8 +12265,8 @@
     "county": "San Bernardino",
     "phone": "7603725847",
     "website": "",
-    "lat": 0,
-    "lng": 0,
+    "lat": 1096.70631,
+    "lng": -3749.00375,
     "outletType": "branch",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -12441,8 +12441,8 @@
     "county": "San Diego",
     "phone": "6194454221",
     "website": "",
-    "lat": 0,
-    "lng": 0,
+    "lat": 1085.4533,
+    "lng": -3859.11814,
     "outletType": "branch",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -13385,8 +13385,8 @@
     "county": "San Diego",
     "phone": "6192365830",
     "website": "",
-    "lat": 0,
-    "lng": 0,
+    "lat": 1180.40634,
+    "lng": -4216.84016,
     "outletType": "central",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -13897,8 +13897,8 @@
     "county": "San Francisco",
     "phone": "4155574400",
     "website": "",
-    "lat": 0,
-    "lng": 0,
+    "lat": 1057.20874,
+    "lng": -3428.28498,
     "outletType": "central",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -14090,7 +14090,7 @@
     "phone": "4088082000",
     "website": "",
     "lat": 932.86449,
-    "lng": 0,
+    "lng": -3046.81706,
     "outletType": "central",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -14586,7 +14586,7 @@
     "phone": "8057815991",
     "website": "",
     "lat": 495.19367,
-    "lng": 0,
+    "lng": -1689.58614,
     "outletType": "central",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -14682,7 +14682,7 @@
     "phone": "8339377625",
     "website": "",
     "lat": 487.76177,
-    "lng": 0,
+    "lng": -1590.06732,
     "outletType": "branch",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -15946,7 +15946,7 @@
     "phone": "5308414175",
     "website": "",
     "lat": 499.18688,
-    "lng": 0,
+    "lng": -1469.79264,
     "outletType": "central",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -16010,7 +16010,7 @@
     "phone": "8665727587",
     "website": "",
     "lat": 344.24082,
-    "lng": 0,
+    "lng": -1098.14538,
     "outletType": "branch",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -16138,7 +16138,7 @@
     "phone": "7073083020",
     "website": "",
     "lat": 576.90143,
-    "lng": 0,
+    "lng": -1841.7147,
     "outletType": "central",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -16538,7 +16538,7 @@
     "phone": "2095587801",
     "website": "",
     "lat": 488.68724,
-    "lng": 0,
+    "lng": -1572.03625,
     "outletType": "central",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -16682,7 +16682,7 @@
     "phone": "2099378221",
     "website": "",
     "lat": 606.5668,
-    "lng": 0,
+    "lng": -1940.37171,
     "outletType": "central",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -17450,7 +17450,7 @@
     "phone": "5597132700",
     "website": "",
     "lat": 652.31359,
-    "lng": 0,
+    "lng": -2145.63078,
     "outletType": "central",
     "status": "open",
     "lastUpdated": "2026-05-03"
@@ -17578,7 +17578,7 @@
     "phone": "8056436393",
     "website": "",
     "lat": 446.09268,
-    "lng": 0,
+    "lng": -1548.91187,
     "outletType": "branch",
     "status": "open",
     "lastUpdated": "2026-05-03"

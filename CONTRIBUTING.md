@@ -10,10 +10,11 @@ calibrarytracker/
 │   └── main.go
 ├── internal/scraper/     # Go scraper internals (parsing, merging, output)
 ├── data/                 # Reference data (JSON) — output of the scraper, checked in
-│   ├── systems.json      # All 186 CA library systems
-│   ├── branches.json     # All ~1,310 branch locations
+│   ├── systems.json      # All 186 CA library systems (scraper-generated)
+│   ├── branches.json     # All ~1,130 branch locations (scraper-generated)
 │   ├── cooperatives.json # CLSA cooperative system membership (hand-curated)
-│   └── partnerships.json # Reciprocal borrowing partnerships (hand-curated)
+│   ├── partnerships.json # Reciprocal borrowing partnerships (hand-curated)
+│   └── digital-access.json # OverDrive/Libby URLs and eCard info (hand-curated)
 ├── src/                  # SvelteKit frontend app
 │   ├── lib/
 │   │   ├── types/        # TypeScript type definitions (shared between scraper output + app)
@@ -66,13 +67,17 @@ npm run test         # Run Playwright tests
 
 ### Scraper (Go)
 
-The scraper fetches data from the CA State Library and outputs JSON files
-into `data/`. These files are checked into the repo and bundled at build time.
+The scraper downloads SpreadsheetML (XML) exports from countingopinions.com
+(the CA State Library's official reporting platform), parses them, and
+outputs JSON files into `data/`. It also merges in `digital-access.json`.
 
 ```bash
 go run ./cmd/scraper              # Run the scraper
 go test ./internal/scraper/...    # Run scraper tests
 ```
+
+The scraper tries the Excel XML export first (faster, more stable), then
+falls back to HTML scraping if the Excel download fails.
 
 ### Data Files
 
@@ -82,6 +87,9 @@ Files in `data/` are the source of truth for library reference data:
   Do not edit by hand; re-run the scraper instead.
 - **`cooperatives.json`** and **`partnerships.json`** — hand-curated.
   Edit these directly when cooperative membership or partnerships change.
+- **`digital-access.json`** — hand-curated. Maps system IDs to OverDrive
+  URLs and eCard registration info. The scraper reads this file and merges
+  the data into `systems.json` at build time.
 
 ## Key Architectural Decisions
 

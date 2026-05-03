@@ -18,24 +18,37 @@ func main() {
 		os.Exit(1)
 	}
 
-	fmt.Println("Fetching administrative headquarters directory...")
-	systems, err := scraper.ParseAdminHQ()
+	fmt.Println("Fetching administrative headquarters (Excel XML)...")
+	systems, err := scraper.ParseAdminHQExcel()
 	if err != nil {
-		fmt.Fprintf(os.Stderr, "error parsing admin HQ: %v\n", err)
-		os.Exit(1)
+		fmt.Fprintf(os.Stderr, "  Excel failed (%v), falling back to HTML...\n", err)
+		systems, err = scraper.ParseAdminHQ()
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "error parsing admin HQ: %v\n", err)
+			os.Exit(1)
+		}
 	}
 	fmt.Printf("  Found %d library systems\n", len(systems))
 
-	fmt.Println("Fetching branch/outlet directory...")
-	branches, err := scraper.ParseBranches()
+	fmt.Println("Fetching branch/outlet directory (Excel XML)...")
+	branches, err := scraper.ParseBranchesExcel()
 	if err != nil {
-		fmt.Fprintf(os.Stderr, "error parsing branches: %v\n", err)
-		os.Exit(1)
+		fmt.Fprintf(os.Stderr, "  Excel failed (%v), falling back to HTML...\n", err)
+		branches, err = scraper.ParseBranches()
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "error parsing branches: %v\n", err)
+			os.Exit(1)
+		}
 	}
 	fmt.Printf("  Found %d branches\n", len(branches))
 
 	fmt.Println("Cross-referencing systems and branches...")
 	scraper.CrossReference(systems, branches)
+
+	fmt.Println("Loading digital access data...")
+	if err := scraper.LoadDigitalAccess("data/digital-access.json", systems); err != nil {
+		fmt.Fprintf(os.Stderr, "  warning: %v (skipping digital access enrichment)\n", err)
+	}
 
 	scraper.SortSystems(systems)
 	scraper.SortBranches(branches)

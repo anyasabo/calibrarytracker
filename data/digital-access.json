@@ -1,0 +1,394 @@
+{
+  "alameda-county-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://aclibrary.overdrive.com"
+  },
+  "alhambra-civic-center-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://alhambralibrary.overdrive.com"
+  },
+  "beaumont-library-district": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://bld.overdrive.com"
+  },
+  "berkeley-public-library": {
+    "ecardNotes": "Online registration for Berkeley residents",
+    "ecardUrl": "https://www.berkeleypubliclibrary.org/using-library/get-library-card",
+    "hasOverdrive": true,
+    "offersEcard": true,
+    "overdriveUrl": "https://berkeleypubliclibrary.overdrive.com"
+  },
+  "beverly-hills-public-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://bhpl.overdrive.com"
+  },
+  "buena-park-library-district": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://buenapark.overdrive.com"
+  },
+  "burbank-public-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://burbank.overdrive.com"
+  },
+  "camarillo-public-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://camdigital.overdrive.com"
+  },
+  "city-of-commerce-public-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://commerceca.overdrive.com"
+  },
+  "contra-costa-county-library": {
+    "ecardNotes": "Instant eCard for Contra Costa residents",
+    "ecardUrl": "https://ccclib.org/get-a-library-card/",
+    "hasOverdrive": true,
+    "offersEcard": true,
+    "overdriveUrl": "https://ccc.overdrive.com"
+  },
+  "fresno-county-public-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://fresno.overdrive.com"
+  },
+  "fullerton-public-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://fullerton.overdrive.com"
+  },
+  "inglewood-public-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://inglewoodpl.overdrive.com"
+  },
+  "kern-county-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://kern.overdrive.com"
+  },
+  "kings-county-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://kings.overdrive.com"
+  },
+  "la-county-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://lacountylibrary.overdrive.com"
+  },
+  "livermore-public-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://livermore.overdrive.com"
+  },
+  "long-beach-public-library": {
+    "ecardNotes": "Online registration available",
+    "ecardUrl": "https://www.longbeach.gov/library/borrow/library-cards/",
+    "hasOverdrive": true,
+    "offersEcard": true,
+    "overdriveUrl": "https://lbpl.overdrive.com"
+  },
+  "los-angeles-public-library": {
+    "ecardNotes": "Instant eCard for CA residents",
+    "ecardUrl": "https://www.lapl.org/e-card",
+    "hasOverdrive": true,
+    "offersEcard": true,
+    "overdriveUrl": "https://lapl.overdrive.com"
+  },
+  "madera-county-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://maderalibrary.overdrive.com"
+  },
+  "merced-county-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://mercedcountylibrary.overdrive.com"
+  },
+  "monterey-county-free-libraries": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://emcfl.overdrive.com"
+  },
+  "moorpark-city-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://mpkdigital.overdrive.com"
+  },
+  "oakland-public-library": {
+    "ecardNotes": "Instant eCard for CA residents",
+    "ecardUrl": "https://www.oaklandlibrary.org/using-the-library/get-a-library-card/",
+    "hasOverdrive": true,
+    "offersEcard": true,
+    "overdriveUrl": "https://oakland.overdrive.com"
+  },
+  "orange-county-public-libraries": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://ocpl.overdrive.com"
+  },
+  "palm-springs-public-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://palmspringslibrary.overdrive.com"
+  },
+  "palos-verdes-library-district": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://pvld.overdrive.com"
+  },
+  "pasadena-public-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://pasadena.overdrive.com"
+  },
+  "rancho-mirage-public-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://rml.overdrive.com"
+  },
+  "redondo-beach-public-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://rbpl.overdrive.com"
+  },
+  "richmond-public-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://richmondlibrary.overdrive.com"
+  },
+  "riverside-county-library-system": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://iedigital.overdrive.com"
+  },
+  "sacramento-public-library": {
+    "ecardNotes": "Instant eCard for Sacramento County residents",
+    "ecardUrl": "https://www.saclibrary.org/Books-Media/eCard",
+    "hasOverdrive": true,
+    "offersEcard": true,
+    "overdriveUrl": "https://saclibrary.overdrive.com"
+  },
+  "salinas-public-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://salinaspubliclibrary.overdrive.com"
+  },
+  "san-bernardino-county-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://sbcldigital.overdrive.com"
+  },
+  "san-bernardino-public-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://sbpl.overdrive.com"
+  },
+  "san-diego-county-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://sdcl.overdrive.com"
+  },
+  "san-francisco-public-library": {
+    "ecardNotes": "Instant eCard for CA residents",
+    "ecardUrl": "https://sfpl.org/get-a-library-card",
+    "hasOverdrive": true,
+    "offersEcard": true,
+    "overdriveUrl": "https://sfpl.overdrive.com"
+  },
+  "san-jose-public-library": {
+    "ecardNotes": "Instant eCard for CA residents",
+    "ecardUrl": "https://www.sjpl.org/ecard",
+    "hasOverdrive": true,
+    "offersEcard": true,
+    "overdriveUrl": "https://sanjose.overdrive.com"
+  },
+  "san-leandro-public-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://sanleandrolibrary.overdrive.com"
+  },
+  "san-luis-obispo-city-county-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://slolibrary.overdrive.com"
+  },
+  "santa-ana-public-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://santaanapubliclibrary.overdrive.com"
+  },
+  "santa-barbara-public-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://santabarbara.overdrive.com"
+  },
+  "santa-clara-county-library": {
+    "ecardNotes": "Instant eCard for CA residents",
+    "ecardUrl": "https://www.sccl.org/eCard",
+    "hasOverdrive": true,
+    "offersEcard": true,
+    "overdriveUrl": "https://santaclara.overdrive.com"
+  },
+  "santa-clarita-public-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://santaclarita.overdrive.com"
+  },
+  "santa-monica-public-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://santamonica.overdrive.com"
+  },
+  "solano-county-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://solano.overdrive.com"
+  },
+  "sonoma-county-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://sonoma.overdrive.com"
+  },
+  "stockton-san-joaquin-county-public-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://ssjcpl.overdrive.com"
+  },
+  "sunnyvale-public-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://sunnyvale.overdrive.com"
+  },
+  "thousand-oaks-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://tolibrary.overdrive.com"
+  },
+  "torrance-public-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://torrance.overdrive.com"
+  },
+  "tulare-county-free-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://tularecounty.overdrive.com"
+  },
+  "whittier-public-library": {
+    "ecardNotes": "Instant eCard",
+    "ecardUrl": "https://www.whittierlibrary.org/ecard",
+    "hasOverdrive": true,
+    "offersEcard": true,
+    "overdriveUrl": "https://whittierpubliclibrary.overdrive.com"
+  },
+  "yolo-county-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://yolocounty.overdrive.com"
+  },
+  "yorba-linda-public-library": {
+    "ecardNotes": "",
+    "ecardUrl": "",
+    "hasOverdrive": true,
+    "offersEcard": false,
+    "overdriveUrl": "https://ylpl.overdrive.com"
+  }
+}
