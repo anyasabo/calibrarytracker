@@ -14,12 +14,32 @@ jobs:
   scrape:
     name: Run scraper and open PR if data changed
     runs-on: ubuntu-latest
+    env:
+      TZ: UTC
+      LC_ALL: C.UTF-8
+      CGO_ENABLED: '0'
+      GOFLAGS: -trimpath
+      GOTOOLCHAIN: local
     steps:
       - uses: actions/checkout@v6
 
       - uses: actions/setup-go@v6
         with:
-          go-version-file: 'go.mod'
+          go-version-file: '.go-version'
+          cache: true
+          cache-dependency-path: go.sum
+
+      - name: Verify Go version files are aligned
+        run: |
+          MOD_VERSION="$(awk '/^go /{print $2; exit}' go.mod)"
+          FILE_VERSION="$(tr -d '[:space:]' < .go-version)"
+          if [ "${MOD_VERSION}" != "${FILE_VERSION}" ]; then
+            echo "go.mod version (${MOD_VERSION}) does not match .go-version (${FILE_VERSION})"
+            exit 1
+          fi
+
+      - name: Verify go modules
+        run: go mod verify
 
       - name: Run scraper
         run: go run ./cmd/scraper

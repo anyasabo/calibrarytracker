@@ -6,17 +6,74 @@ on:
   pull_request:
     branches: [main]
 
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
+  changes:
+    name: Detect changed areas
+    runs-on: ubuntu-latest
+    outputs:
+      frontend: ${{ steps.filter.outputs.frontend }}
+      go: ${{ steps.filter.outputs.go }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - id: filter
+        uses: dorny/paths-filter@v3
+        with:
+          filters: |
+            frontend:
+              - 'package.json'
+              - 'package-lock.json'
+              - '.node-version'
+              - 'data/**'
+              - 'src/**'
+              - 'static/**'
+              - 'svelte.config.js'
+              - 'vite.config.ts'
+              - 'tsconfig.json'
+              - 'eslint.config.js'
+              - '.prettierrc'
+              - '.prettierignore'
+              - '.github/workflows/ci.yml'
+              - '.github/workflows/deploy.yml'
+            go:
+              - 'go.mod'
+              - 'go.sum'
+              - '.go-version'
+              - 'cmd/**'
+              - 'internal/**'
+              - '.github/workflows/ci.yml'
+              - '.github/workflows/scraper.yml'
+
   lint-and-build:
     name: Lint, Check, Build (Frontend)
+    needs: changes
+    if: needs.changes.outputs.frontend == 'true'
     runs-on: ubuntu-latest
+    env:
+      TZ: UTC
+      LC_ALL: C.UTF-8
+      NPM_CONFIG_ENGINE_STRICT: 'true'
     steps:
       - uses: actions/checkout@v6
 
       - uses: actions/setup-node@v6
         with:
-          node-version-file: 'package.json'
+          node-version-file: '.node-version'
           cache: 'npm'
+          cache-dependency-path: package-lock.json
+
+      - name: Verify Node version files are aligned
+        run: |
+          ENGINE_VERSION="$(node -p "require('./package.json').engines?.node ?? ''")"
+          FILE_VERSION="$(tr -d '[:space:]' < .node-version)"
+          if [ "${ENGINE_VERSION}" != "${FILE_VERSION}" ]; then
+            echo "package.json engines.node (${ENGINE_VERSION}) does not match .node-version (${FILE_VERSION})"
+            exit 1
+          fi
 
       - run: npm ci --include=dev --no-audit --no-fund
 
@@ -32,18 +89,49 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Upload frontend build artifact
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: actions/upload-artifact@v4
+        with:
+          name: frontend-build
+          path: build
+          if-no-files-found: error
+          retention-days: 1
+
   go:
     name: Lint, Vet, Test (Scraper)
+    needs: changes
+    if: needs.changes.outputs.go == 'true'
     runs-on: ubuntu-latest
+    env:
+      TZ: UTC
+      LC_ALL: C.UTF-8
+      CGO_ENABLED: '0'
+      GOFLAGS: -trimpath
+      GOTOOLCHAIN: local
     steps:
       - uses: actions/checkout@v6
 
       - uses: actions/setup-go@v6
         with:
-          go-version-file: 'go.mod'
+          go-version-file: '.go-version'
+          cache: true
+          cache-dependency-path: go.sum
+
+      - name: Verify Go version files are aligned
+        run: |
+          MOD_VERSION="$(awk '/^go /{print $2; exit}' go.mod)"
+          FILE_VERSION="$(tr -d '[:space:]' < .go-version)"
+          if [ "${MOD_VERSION}" != "${FILE_VERSION}" ]; then
+            echo "go.mod version (${MOD_VERSION}) does not match .go-version (${FILE_VERSION})"
+            exit 1
+          fi
+
+      - name: Verify go modules
+        run: go mod verify
 
       - name: go vet
         run: go vet ./...
 
       - name: go test
-        run: go test -v ./...
+        run: go test ./...

@@ -4,7 +4,7 @@ Thanks for helping! This guide covers everything you need to get started.
 
 ## Project Structure
 
-```
+```text
 calibrarytracker/
 ├── cmd/scraper/          # Go CLI that fetches library data from CA State Library
 │   └── main.go
@@ -28,24 +28,36 @@ calibrarytracker/
 
 ## Prerequisites
 
-- **Node.js 20+** and **npm 10+** — for the SvelteKit frontend
-- **Go 1.22+** — for the scraper CLI
+- **mise** (recommended) — use it to install and activate runtime versions from repo files.
+- If you cannot use mise, install these manually:
+  - **Node.js 24.x** + npm
+  - **Go 1.26**
 
 ## Quick Start
 
 ```bash
-# Install frontend dependencies
-npm install
+# 1) Install repo runtimes from version files
+mise install
 
-# Run the dev server (hot reload)
-npm run dev
+# 2) Confirm versions (should match .node-version and .go-version)
+node -v
+go version
 
-# Run the Go scraper to refresh library data
+# 3) Install frontend dependencies
+npm ci --include=dev --no-audit --no-fund
+
+# 4) Refresh library data (scraper)
 go run ./cmd/scraper
 
-# Run all checks (what CI runs)
+# 5) Run frontend checks
+npm run lint
 npm run check
+
+# 6) Build production static site
+npm run build
 ```
+
+If you only touch scraper/data files, you do **not** need to run the frontend dev server.
 
 ## Development Workflow
 
@@ -149,6 +161,7 @@ formats. It runs in CI as a GitHub Action.
 - Errors are returned, not panicked. Log and exit gracefully.
 - The scraper should be idempotent — running it twice produces identical
   output if the source data hasn't changed.
+- Keep `.go-version` and `go.mod` aligned (CI verifies this).
 
 ## Linting & Formatting
 
@@ -186,7 +199,9 @@ Quick summary:
 
 1. Create a branch: `git checkout -b my-feature`
 2. Make your changes
-3. Run `npm run lint && npm run check && npm run build` to verify
+3. Run checks for the area you touched:
+   - Frontend/app changes: `npm run lint && npm run check && npm run build`
+   - Scraper/Go changes: `go vet ./... && go test ./...`
 4. Commit with a clear message explaining _why_ (not just _what_)
 5. Open a PR — CI will run automatically
 
