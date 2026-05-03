@@ -132,7 +132,9 @@ func TestParseBranchesExcel(t *testing.T) {
 		{"City", b.City, "SACRAMENTO"},
 		{"ZipCode", b.ZipCode, "95821"},
 		{"County", b.County, "Sacramento"},
+		{"Phone", b.Phone, "(916) 264-2920"},
 		{"OutletType", b.OutletType, "branch"},
+		{"Status", b.Status, "open"},
 	}
 	for _, c := range checks {
 		if c.got != c.want {

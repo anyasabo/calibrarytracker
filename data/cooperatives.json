@@ -2,6 +2,7 @@
   {
     "id": "black-gold",
     "name": "Black Gold Cooperative Library System",
+    "overdriveUrl": "https://blackgold.overdrive.com",
     "subgroups": [
       {
         "id": "black-gold-main",
@@ -20,6 +21,7 @@
   {
     "id": "49-99",
     "name": "49-99 Cooperative Library System",
+    "overdriveUrl": "",
     "subgroups": [
       {
         "id": "49-99-main",
@@ -38,6 +40,7 @@
   {
     "id": "inland",
     "name": "Inland Library System",
+    "overdriveUrl": "https://ilg.overdrive.com",
     "subgroups": [
       {
         "id": "inland-main",
@@ -69,6 +72,7 @@
   {
     "id": "northnet",
     "name": "NorthNet Library System",
+    "overdriveUrl": "https://northnet.overdrive.com",
     "subgroups": [
       {
         "id": "northnet-mvls",
@@ -133,6 +137,7 @@
   {
     "id": "plp",
     "name": "Pacific Library Partnership",
+    "overdriveUrl": "https://pls.overdrive.com",
     "subgroups": [
       {
         "id": "plp-balis",
@@ -198,6 +203,7 @@
   {
     "id": "santiago",
     "name": "Santiago Library System",
+    "overdriveUrl": "",
     "subgroups": [
       {
         "id": "santiago-main",
@@ -221,6 +227,7 @@
   {
     "id": "serra",
     "name": "Serra Cooperative Library System",
+    "overdriveUrl": "https://serra.overdrive.com",
     "subgroups": [
       {
         "id": "serra-main",
@@ -246,6 +253,7 @@
   {
     "id": "sjvls",
     "name": "San Joaquin Valley Library System",
+    "overdriveUrl": "",
     "subgroups": [
       {
         "id": "sjvls-main",
@@ -268,6 +276,7 @@
   {
     "id": "sclc",
     "name": "Southern California Library Cooperative",
+    "overdriveUrl": "https://scdl.overdrive.com",
     "subgroups": [
       {
         "id": "sclc-mcls",

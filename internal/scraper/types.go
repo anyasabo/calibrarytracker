@@ -38,7 +38,6 @@ type Branch struct {
 	ZipCode     string  `json:"zipCode"`
 	County      string  `json:"county"`
 	Phone       string  `json:"phone"`
-	Website     string  `json:"website"`
 	Lat         float64 `json:"lat"`
 	Lng         float64 `json:"lng"`
 	OutletType  string  `json:"outletType"`

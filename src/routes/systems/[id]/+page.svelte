@@ -4,7 +4,8 @@
 		getSystemById,
 		getBranchesBySystem,
 		getPartnershipsForSystem,
-		getReciprocatingSystemIds
+		getReciprocatingSystemIds,
+		getConsortiumOverdriveUrl
 	} from '$lib/data';
 	import { getCardsBySystem, addCard, getVisitsByBranch, addVisit } from '$lib/db';
 	import { getReferenceData } from '$lib/data';
@@ -17,6 +18,7 @@
 	const branches = $derived(getBranchesBySystem(systemId));
 	const partnerships = $derived(getPartnershipsForSystem(systemId));
 	const reciprocatingIds = $derived(getReciprocatingSystemIds(systemId));
+	const consortiumOd = $derived(getConsortiumOverdriveUrl(systemId));
 
 	let cards = $state<UserCard[]>([]);
 	let visitedBranchIds = $state<Set<string>>(new Set());
@@ -102,13 +104,20 @@
 			{/if}
 		</div>
 
-		{#if system.digitalAccess.hasOverdrive || system.digitalAccess.offersEcard}
+		{#if system.digitalAccess.hasOverdrive || system.digitalAccess.offersEcard || consortiumOd}
 			<div class="info-section">
 				<h2>Digital Access</h2>
 				{#if system.digitalAccess.hasOverdrive}
 					<p>
 						Libby/OverDrive:
 						<a href={system.digitalAccess.overdriveUrl} target="_blank" rel="noopener">
+							Browse collection
+						</a>
+					</p>
+				{:else if consortiumOd}
+					<p>
+						Libby/OverDrive (via {consortiumOd.coopName}):
+						<a href={consortiumOd.url} target="_blank" rel="noopener">
 							Browse collection
 						</a>
 					</p>

@@ -49,6 +49,24 @@ export function getPartnershipsForSystem(systemId: string): Partnership[] {
 }
 
 /**
+ * Returns the consortium OverDrive URL for a system that doesn't have its own,
+ * by checking whether its cooperative has a shared OverDrive instance.
+ */
+export function getConsortiumOverdriveUrl(
+	systemId: string
+): { url: string; coopName: string } | undefined {
+	for (const coop of cooperatives) {
+		if (!coop.overdriveUrl) continue;
+		for (const sg of coop.subgroups) {
+			if (sg.memberSystemIds.includes(systemId)) {
+				return { url: coop.overdriveUrl, coopName: coop.name };
+			}
+		}
+	}
+	return undefined;
+}
+
+/**
  * Given a system ID, returns all other system IDs whose cards are accepted
  * at that system (via cooperative membership or explicit partnership).
  */

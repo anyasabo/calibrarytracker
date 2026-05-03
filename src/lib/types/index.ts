@@ -77,8 +77,6 @@ export interface Branch {
 	county: string;
 	/** Phone number */
 	phone: string;
-	/** Branch-specific web page, if different from system website */
-	website: string;
 	/** Latitude */
 	lat: number;
 	/** Longitude */
@@ -105,6 +103,8 @@ export interface CooperativeSystem {
 	id: string;
 	/** Display name (e.g., "NorthNet Library System") */
 	name: string;
+	/** Consortium-level OverDrive URL, if the cooperative shares one (e.g., "https://northnet.overdrive.com") */
+	overdriveUrl: string;
 	/** Subgroups within this cooperative */
 	subgroups: CooperativeSubgroup[];
 }

@@ -133,7 +133,7 @@ func parseAdminHQExcel(r io.Reader) ([]LibrarySystem, error) {
 			Name:          name,
 			Address:       col("address"),
 			City:          col("city"),
-			Phone:         col("phone"),
+			Phone:         formatPhone(col("phone")),
 			Website:       website,
 			Email:         email,
 			DirectorName:  dirName,
@@ -212,8 +212,9 @@ func parseBranchesExcel(r io.Reader) ([]Branch, error) {
 		}
 		seen[key] = true
 
-		lat, _ := strconv.ParseFloat(col("lat"), 64)
-		lng, _ := strconv.ParseFloat(col("lng"), 64)
+		rawLat, _ := strconv.ParseFloat(col("lat"), 64)
+		rawLng, _ := strconv.ParseFloat(col("lng"), 64)
+		lat, lng := validateCACoords(rawLat, rawLng, name)
 
 		b := Branch{
 			ID:          id,
@@ -223,11 +224,11 @@ func parseBranchesExcel(r io.Reader) ([]Branch, error) {
 			City:        col("city"),
 			ZipCode:     col("zip"),
 			County:      cleanCounty(col("county")),
-			Phone:       col("phone"),
+			Phone:       formatPhone(col("phone")),
 			Lat:         lat,
 			Lng:         lng,
 			OutletType:  parseOutletType(col("outletType")),
-			Status:      "open",
+			Status:      parseBranchStatus(col("status")),
 			LastUpdated: now,
 		}
 		branches = append(branches, b)

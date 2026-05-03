@@ -77,14 +77,16 @@ func CrossReference(systems []LibrarySystem, branches []Branch) {
 		if sys.County == "" && branches[i].County != "" {
 			sys.County = branches[i].County
 		}
-		// Prefer central branch coordinates; fall back to any branch
-		if branches[i].Lat != 0 && branches[i].Lng != 0 {
+		bLat, bLng := validateCACoords(branches[i].Lat, branches[i].Lng, branches[i].Name)
+		branches[i].Lat = bLat
+		branches[i].Lng = bLng
+		if bLat != 0 && bLng != 0 {
 			if sys.Lat == 0 && sys.Lng == 0 {
-				sys.Lat = branches[i].Lat
-				sys.Lng = branches[i].Lng
+				sys.Lat = bLat
+				sys.Lng = bLng
 			} else if branches[i].OutletType == "central" {
-				sys.Lat = branches[i].Lat
-				sys.Lng = branches[i].Lng
+				sys.Lat = bLat
+				sys.Lng = bLng
 			}
 		}
 	}

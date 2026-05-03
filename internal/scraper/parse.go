@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"io"
 	"net/http"
+	"os"
 	"strconv"
 	"strings"
 	"time"
@@ -151,7 +152,7 @@ func parseAdminHQHTML(r io.Reader) ([]LibrarySystem, error) {
 			Name:          name,
 			Address:       col("address"),
 			City:          col("city"),
-			Phone:         col("phone"),
+			Phone:         formatPhone(col("phone")),
 			Website:       website,
 			Email:         email,
 			DirectorName:  dirName,
@@ -236,11 +237,14 @@ func parseBranchesHTML(r io.Reader) ([]Branch, error) {
 		}
 		seen[key] = true
 
-		lat, _ := strconv.ParseFloat(cleanText(cells.Eq(12).Text()), 64)
-		lng, _ := strconv.ParseFloat(cleanText(cells.Eq(13).Text()), 64)
+		rawLat, _ := strconv.ParseFloat(cleanText(cells.Eq(12).Text()), 64)
+		rawLng, _ := strconv.ParseFloat(cleanText(cells.Eq(13).Text()), 64)
+		lat, lng := validateCACoords(rawLat, rawLng, name)
 
 		outletType := parseOutletType(cleanText(cells.Eq(14).Text()))
 		county := cleanCounty(cleanText(cells.Eq(10).Text()))
+
+		status := parseBranchStatus(cleanText(cells.Eq(16).Text()))
 
 		b := Branch{
 			ID:          id,
@@ -250,11 +254,11 @@ func parseBranchesHTML(r io.Reader) ([]Branch, error) {
 			City:        cleanText(cells.Eq(3).Text()),
 			ZipCode:     cleanText(cells.Eq(4).Text()),
 			County:      county,
-			Phone:       cleanText(cells.Eq(11).Text()),
+			Phone:       formatPhone(cleanText(cells.Eq(11).Text())),
 			Lat:         lat,
 			Lng:         lng,
 			OutletType:  outletType,
-			Status:      "open",
+			Status:      status,
 			LastUpdated: now,
 		}
 
@@ -262,6 +266,21 @@ func parseBranchesHTML(r io.Reader) ([]Branch, error) {
 	})
 
 	return branches, nil
+}
+
+func parseBranchStatus(raw string) string {
+	lower := strings.ToLower(strings.TrimSpace(raw))
+	switch {
+	case lower == "closed" || lower == "permanently closed":
+		return "closed"
+	case strings.Contains(lower, "temporarily") || strings.Contains(lower, "temp"):
+		return "temporarily-closed"
+	case lower == "" || lower == "open" || lower == "no change":
+		return "open"
+	default:
+		fmt.Fprintf(os.Stderr, "warning: unknown branch status %q, defaulting to open\n", raw)
+		return "open"
+	}
 }
 
 func parseOutletType(raw string) string {
@@ -287,6 +306,43 @@ func cleanCounty(raw string) string {
 		}
 	}
 	return raw
+}
+
+// formatPhone normalizes a phone string to (xxx) xxx-xxxx format.
+// If the input is already formatted or can't be parsed as 10 digits, returns as-is.
+func formatPhone(raw string) string {
+	if raw == "" {
+		return ""
+	}
+	if strings.Contains(raw, "(") {
+		return raw
+	}
+	var digits []byte
+	for _, c := range raw {
+		if c >= '0' && c <= '9' {
+			digits = append(digits, byte(c))
+		}
+	}
+	if len(digits) == 11 && digits[0] == '1' {
+		digits = digits[1:]
+	}
+	if len(digits) != 10 {
+		return raw
+	}
+	return fmt.Sprintf("(%s) %s-%s", digits[0:3], digits[3:6], digits[6:10])
+}
+
+// validateCACoords returns lat/lng unchanged if they fall within California's
+// bounding box, or (0, 0) with a warning if they don't.
+func validateCACoords(lat, lng float64, name string) (float64, float64) {
+	if lat == 0 && lng == 0 {
+		return 0, 0
+	}
+	if lat < 32.5 || lat > 42.0 || lng < -124.5 || lng > -114.0 {
+		fmt.Fprintf(os.Stderr, "warning: %q has coordinates outside CA (%.5f, %.5f), zeroing\n", name, lat, lng)
+		return 0, 0
+	}
+	return lat, lng
 }
 
 func cleanText(s string) string {
