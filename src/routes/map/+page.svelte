@@ -1,9 +1,9 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import { getReferenceData, getReciprocatingSystemIds } from '$lib/data';
 	import { getAllCards, getAllVisits, addVisit } from '$lib/db';
 	import type { UserCard, BranchVisit, Branch } from '$lib/types';
 	import { SvelteSet } from 'svelte/reactivity';
-	import BranchMap from '$lib/components/BranchMap.svelte';
 
 	const { branches } = getReferenceData();
 
@@ -16,6 +16,9 @@
 	let routeMode = $state(false);
 	let routeStops = $state<Branch[]>([]);
 	let mapReady = $state(false);
+	let BranchMapComponent = $state<
+		(typeof import('$lib/components/BranchMap.svelte'))['default'] | null
+	>(null);
 
 	const cardSystemIds = $derived(new Set(cards.map((c) => c.systemId)));
 
@@ -39,6 +42,11 @@
 			visits = v;
 			mapReady = true;
 		});
+	});
+
+	onMount(async () => {
+		const mod = await import('$lib/components/BranchMap.svelte');
+		BranchMapComponent = mod.default;
 	});
 
 	function handleToggleRouteStop(branch: Branch): void {
@@ -193,8 +201,8 @@
 	{/if}
 
 	<div class="map-wrapper">
-		{#if mapReady}
-			<BranchMap
+		{#if mapReady && BranchMapComponent}
+			<BranchMapComponent
 				branches={mappableBranches}
 				{cardSystemIds}
 				reciprocatingSystemIds={reciprocatingSystemIds()}
@@ -206,6 +214,8 @@
 				onToggleRouteStop={handleToggleRouteStop}
 				onMarkVisited={handleMarkVisited}
 			/>
+		{:else if mapReady}
+			<div class="map-loading">Loading map...</div>
 		{/if}
 	</div>
 </div>
@@ -455,6 +465,15 @@
 	.map-wrapper {
 		flex: 1;
 		min-height: 0;
+	}
+
+	.map-loading {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: var(--color-text-muted);
+		font-size: 0.95rem;
 	}
 
 	@media (max-width: 640px) {
