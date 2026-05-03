@@ -1,0 +1,15 @@
+[
+  {
+    "id": "sacramento-valley-partners",
+    "name": "Sacramento Valley Library Partners",
+    "description": "Partner libraries share a catalog. Cards from any partner are accepted at all partner locations. Most physical items can be shipped between partners via holds. Electronic resources (eBooks) are not shared due to licensing.",
+    "memberSystemIds": [
+      "folsom-public-library",
+      "sacramento-public-library",
+      "sutter-county-library",
+      "woodland-public-library",
+      "colusa-county-free-library"
+    ],
+    "type": "catalog-sharing"
+  }
+]

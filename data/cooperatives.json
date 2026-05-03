@@ -1,0 +1,326 @@
+[
+  {
+    "id": "black-gold",
+    "name": "Black Gold Cooperative Library System",
+    "subgroups": [
+      {
+        "id": "black-gold-main",
+        "name": "Black Gold",
+        "memberSystemIds": [
+          "carpinteria-community-library",
+          "goleta-santa-ynez-valley-libraries",
+          "lompoc-public-library",
+          "paso-robles-city-library",
+          "santa-maria-public-library",
+          "blanchard-santa-paula-public-library-district"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "49-99",
+    "name": "49-99 Cooperative Library System",
+    "subgroups": [
+      {
+        "id": "49-99-main",
+        "name": "49-99",
+        "memberSystemIds": [
+          "amador-county-library",
+          "calaveras-county-library",
+          "lodi-public-library",
+          "stanislaus-county-free-library",
+          "stockton-san-joaquin-county-public-library",
+          "tuolumne-county-library"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "inland",
+    "name": "Inland Library System",
+    "subgroups": [
+      {
+        "id": "inland-main",
+        "name": "Inland",
+        "memberSystemIds": [
+          "banning-library-district",
+          "beaumont-library-district",
+          "colton-public-library",
+          "corona-public-library",
+          "hemet-public-library",
+          "inyo-county-free-library",
+          "moreno-valley-public-library",
+          "murrieta-public-library",
+          "ontario-city-library",
+          "palm-springs-public-library",
+          "palo-verde-valley-library-district",
+          "rancho-cucamonga-public-library",
+          "rancho-mirage-public-library",
+          "riverside-county-library-system",
+          "riverside-public-library",
+          "san-bernardino-county-library",
+          "san-bernardino-public-library",
+          "upland-public-library",
+          "victorville-city-library"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "northnet",
+    "name": "NorthNet Library System",
+    "subgroups": [
+      {
+        "id": "northnet-mvls",
+        "name": "Mountain Valley Library System (MVLS)",
+        "memberSystemIds": [
+          "alpine-county-library-archives",
+          "colusa-county-free-library",
+          "el-dorado-county-library",
+          "folsom-public-library",
+          "lincoln-public-library",
+          "mono-county-free-library",
+          "nevada-county-library",
+          "placer-county-library",
+          "roseville-public-library",
+          "sacramento-public-library",
+          "sutter-county-library",
+          "woodland-public-library",
+          "yolo-county-library",
+          "yuba-county-library"
+        ]
+      },
+      {
+        "id": "northnet-north-bay",
+        "name": "North Bay Cooperative Library System",
+        "memberSystemIds": [
+          "belvedere-tiburon-library",
+          "benicia-public-library",
+          "lake-county-library",
+          "larkspur-public-library",
+          "marin-county-free-library",
+          "mendocino-county-library",
+          "mill-valley-public-library",
+          "napa-county-library",
+          "san-anselmo-public-library",
+          "san-rafael-public-library",
+          "sausalito-public-library",
+          "solano-county-library",
+          "sonoma-county-library",
+          "st-helena-public-library"
+        ]
+      },
+      {
+        "id": "northnet-north-state",
+        "name": "North State Cooperative Library System",
+        "memberSystemIds": [
+          "butte-county-library",
+          "del-norte-county-library-district",
+          "humboldt-county-library",
+          "lassen-library-district",
+          "modoc-county-library",
+          "orland-free-library",
+          "plumas-county-library",
+          "shasta-public-libraries",
+          "siskiyou-county-free-library",
+          "tehama-county-library",
+          "trinity-county-free-library",
+          "willows-public-library"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "plp",
+    "name": "Pacific Library Partnership",
+    "subgroups": [
+      {
+        "id": "plp-balis",
+        "name": "Bay Area Library and Information System (BALIS)",
+        "memberSystemIds": [
+          "alameda-county-library",
+          "alameda-free-library",
+          "berkeley-public-library",
+          "contra-costa-county-library",
+          "hayward-public-library",
+          "livermore-public-library",
+          "oakland-public-library",
+          "pleasanton-public-library",
+          "richmond-public-library",
+          "san-francisco-public-library",
+          "san-leandro-public-library"
+        ]
+      },
+      {
+        "id": "plp-mobac",
+        "name": "Monterey Bay Area Cooperative Library System (MOBAC)",
+        "memberSystemIds": [
+          "harrison-memorial-library",
+          "monterey-county-free-libraries",
+          "monterey-public-library",
+          "pacific-grove-public-library",
+          "salinas-public-library",
+          "san-benito-county-free-library",
+          "san-juan-bautista-city-library",
+          "santa-cruz-public-libraries",
+          "watsonville-public-library"
+        ]
+      },
+      {
+        "id": "plp-peninsula",
+        "name": "Peninsula Library System (PLS)",
+        "memberSystemIds": [
+          "burlingame-public-library",
+          "daly-city-public-library",
+          "menlo-park-public-library",
+          "redwood-city-public-library",
+          "san-bruno-public-library",
+          "san-mateo-county-libraries",
+          "san-mateo-public-library",
+          "south-san-francisco-public-library"
+        ]
+      },
+      {
+        "id": "plp-svls",
+        "name": "Silicon Valley Library System (SVLS)",
+        "memberSystemIds": [
+          "los-gatos-library",
+          "mountain-view-public-library",
+          "palo-alto-city-library",
+          "san-jose-public-library",
+          "santa-clara-city-library",
+          "santa-clara-county-library",
+          "sunnyvale-public-library"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "santiago",
+    "name": "Santiago Library System",
+    "subgroups": [
+      {
+        "id": "santiago-main",
+        "name": "Santiago",
+        "memberSystemIds": [
+          "anaheim-public-library",
+          "buena-park-library-district",
+          "fullerton-public-library",
+          "huntington-beach-public-library",
+          "mission-viejo-library",
+          "newport-beach-public-library",
+          "orange-county-public-libraries",
+          "orange-public-library",
+          "placentia-library-district",
+          "santa-ana-public-library",
+          "yorba-linda-public-library"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serra",
+    "name": "Serra Cooperative Library System",
+    "subgroups": [
+      {
+        "id": "serra-main",
+        "name": "Serra",
+        "memberSystemIds": [
+          "brawley-public-library",
+          "camarena-memorial-public-library",
+          "carlsbad-city-library",
+          "chula-vista-public-library",
+          "coronado-public-library",
+          "el-centro-public-library",
+          "escondido-public-library",
+          "imperial-county-library",
+          "imperial-public-library",
+          "national-city-public-library",
+          "oceanside-public-library",
+          "san-diego-county-library",
+          "san-diego-public-library"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sjvls",
+    "name": "San Joaquin Valley Library System",
+    "subgroups": [
+      {
+        "id": "sjvls-main",
+        "name": "SJVLS",
+        "memberSystemIds": [
+          "coalinga-huron-library-district",
+          "fresno-county-public-library",
+          "kern-county-library",
+          "kings-county-library",
+          "madera-county-library",
+          "mariposa-county-library",
+          "merced-county-library",
+          "porterville-public-library",
+          "tulare-county-free-library",
+          "tulare-public-library"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sclc",
+    "name": "Southern California Library Cooperative",
+    "subgroups": [
+      {
+        "id": "sclc-mcls",
+        "name": "Metropolitan Cooperative Library System (MCLS)",
+        "memberSystemIds": [
+          "alhambra-civic-center-library",
+          "altadena-library-district",
+          "arcadia-public-library",
+          "azusa-city-library",
+          "beverly-hills-public-library",
+          "burbank-public-library",
+          "calabasas-city-library",
+          "camarillo-public-library",
+          "city-of-commerce-public-library",
+          "covina-public-library",
+          "downey-city-library",
+          "el-segundo-public-library",
+          "glendale-library-arts-culture",
+          "glendora-library-cultural-center",
+          "irwindale-public-library",
+          "long-beach-public-library",
+          "los-angeles-public-library",
+          "monrovia-public-library",
+          "monterey-park-bruggemeyer-library",
+          "moorpark-city-library",
+          "oxnard-public-library",
+          "palos-verdes-library-district",
+          "pomona-public-library",
+          "redondo-beach-public-library",
+          "crowell-public-library",
+          "santa-clarita-public-library",
+          "santa-fe-springs-city-library",
+          "santa-monica-public-library",
+          "sierra-madre-public-library",
+          "signal-hill-public-library",
+          "simi-valley-public-library",
+          "south-pasadena-public-library",
+          "thousand-oaks-library",
+          "torrance-public-library",
+          "ventura-county-library",
+          "whittier-public-library"
+        ]
+      },
+      {
+        "id": "sclc-south-state",
+        "name": "South State Cooperative Library System",
+        "memberSystemIds": [
+          "la-county-library",
+          "inglewood-public-library",
+          "palmdale-city-library",
+          "pasadena-public-library"
+        ]
+      }
+    ]
+  }
+]

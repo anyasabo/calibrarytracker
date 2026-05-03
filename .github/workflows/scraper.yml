@@ -1,0 +1,51 @@
+name: Update Library Data
+
+on:
+  schedule:
+    # Run at 09:00 UTC on the 1st of every month
+    - cron: '0 9 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  scrape:
+    name: Run scraper and open PR if data changed
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
+
+      - name: Run scraper
+        run: go run ./cmd/scraper
+
+      - name: Check for changes
+        id: diff
+        run: |
+          if git diff --quiet data/; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create PR with updated data
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH="scraper/update-$(date +%Y-%m-%d)"
+          git checkout -b "$BRANCH"
+          git add data/
+          git commit -m "data: update library data from CA State Library
+
+          Automated update from the monthly scraper run."
+          git push -u origin "$BRANCH"
+          gh pr create \
+            --title "Update library data ($(date +%Y-%m-%d))" \
+            --body "Automated update from the monthly scraper run. Review the diff in \`data/\` before merging." \
+            --base main
