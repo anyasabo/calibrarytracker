@@ -1,0 +1,96 @@
+[
+  {
+    "id": "sacramento-valley-partners",
+    "name": "Sacramento Valley Library Partners",
+    "description": "Partner libraries share a catalog. Cards from any partner are accepted at all partner locations. Most physical items can be shipped between partners via holds.",
+    "memberSystemIds": [
+      "colusa-county-free-library",
+      "folsom-public-library",
+      "sacramento-public-library",
+      "sutter-county-library",
+      "woodland-public-library"
+    ],
+    "type": "catalog-sharing"
+  },
+  {
+    "id": "marinet",
+    "name": "MARINet (Marin County)",
+    "description": "Seven public libraries in Marin County share a single catalog and automation system. A card from any MARINet library works at all member locations.",
+    "memberSystemIds": [
+      "belvedere-tiburon-library",
+      "larkspur-public-library",
+      "marin-county-free-library",
+      "mill-valley-public-library",
+      "san-anselmo-public-library",
+      "san-rafael-public-library",
+      "sausalito-public-library"
+    ],
+    "type": "catalog-sharing"
+  },
+  {
+    "id": "pls-smcl",
+    "name": "Peninsula Library System (San Mateo County)",
+    "description": "San Mateo County area libraries share a BiblioCommons catalog. A card from any PLS member library grants borrowing privileges at all other PLS libraries.",
+    "memberSystemIds": [
+      "burlingame-public-library",
+      "daly-city-public-library",
+      "menlo-park-public-library",
+      "redwood-city-public-library",
+      "san-bruno-public-library",
+      "san-mateo-county-libraries",
+      "san-mateo-public-library",
+      "south-san-francisco-public-library"
+    ],
+    "type": "catalog-sharing"
+  },
+  {
+    "id": "svls-catalog",
+    "name": "Silicon Valley Library System Shared Catalog",
+    "description": "Santa Clara County area libraries share a catalog. Cards from any SVLS member can be used at all member locations to borrow materials.",
+    "memberSystemIds": [
+      "los-gatos-library",
+      "mountain-view-public-library",
+      "palo-alto-city-library",
+      "san-jose-public-library",
+      "santa-clara-city-library",
+      "santa-clara-county-library",
+      "sunnyvale-public-library"
+    ],
+    "type": "catalog-sharing"
+  },
+  {
+    "id": "balis-reciprocal",
+    "name": "BALIS Reciprocal Borrowing (East Bay / SF)",
+    "description": "Bay Area Library and Information System members honor each other's cards for in-person borrowing at any member library.",
+    "memberSystemIds": [
+      "alameda-county-library",
+      "alameda-free-library",
+      "berkeley-public-library",
+      "contra-costa-county-library",
+      "hayward-public-library",
+      "livermore-public-library",
+      "oakland-public-library",
+      "pleasanton-public-library",
+      "richmond-public-library",
+      "san-francisco-public-library",
+      "san-leandro-public-library"
+    ],
+    "type": "reciprocal-borrowing"
+  },
+  {
+    "id": "black-gold-catalog",
+    "name": "Black Gold Cooperative Shared Catalog",
+    "description": "Central Coast libraries share a catalog and courier service. A card from any Black Gold member works at all member locations.",
+    "memberSystemIds": [
+      "carpinteria-community-library",
+      "goleta-santa-ynez-valley-libraries",
+      "lompoc-public-library",
+      "paso-robles-city-library",
+      "san-luis-obispo-city-county-library",
+      "santa-barbara-public-library",
+      "santa-maria-public-library",
+      "blanchard-santa-paula-public-library-district"
+    ],
+    "type": "catalog-sharing"
+  }
+]

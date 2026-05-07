@@ -1,0 +1,21 @@
+# Package manager
+node_modules/
+
+# Build output
+build/
+.svelte-kit/
+
+# Generated data (formatted by Go scraper, not Prettier)
+data/systems.json
+data/branches.json
+
+# Hand-curated data
+data/cooperatives.json
+data/partnerships.json
+data/digital-access.json
+
+# Go
+cmd/
+internal/
+go.mod
+go.sum

@@ -1,0 +1,20 @@
+node_modules/
+build/
+.svelte-kit/
+.playwright-pages/
+playwright-report/
+test-results/
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/settings.json
+!.vscode/extensions.json
+
+# Go binary
+cmd/scraper/scraper
