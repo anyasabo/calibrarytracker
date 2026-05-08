@@ -45,6 +45,15 @@ export default ts.config(
 		}
 	},
 	{
+		files: ['scripts/check-data-coordinates.mjs'],
+		rules: {
+			// This is an explicit CLI/reporting script, so console output is intentional.
+			'no-console': 'off',
+			// JS utility script; explicit TS return annotations are not meaningful here.
+			'@typescript-eslint/explicit-function-return-type': 'off'
+		}
+	},
+	{
 		ignores: [
 			'build/',
 			'.svelte-kit/',
