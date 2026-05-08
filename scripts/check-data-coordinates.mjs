@@ -112,6 +112,8 @@ async function main() {
 }
 
 main().catch((error) => {
-	console.error(`Coordinate audit crashed: ${error instanceof Error ? error.message : String(error)}`);
+	console.error(
+		`Coordinate audit crashed: ${error instanceof Error ? error.message : String(error)}`
+	);
 	process.exitCode = 1;
 });

@@ -48,6 +48,9 @@ export default ts.config(
 		ignores: [
 			'build/',
 			'.svelte-kit/',
+			'.playwright-pages/',
+			'playwright-report/',
+			'test-results/',
 			'node_modules/',
 			'data/',
 			'cmd/',
